@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <body>
+            <script>
+                const studentDetails=["santhosh","Ravi","Vijay","Priya", "Sabru"];
+                function arrayToString(){
+                    const studentInfo = studentDetails.toString()
+                   document.getElementById("string").innerHTML =  studentInfo;    
+                }
+                function push(){
+                   studentDetails.push("test");
+                   document.getElementById("data").innerHTML =  studentDetails.toString();    
+                }
+                function pop(){
+                   studentDetails.pop();
+                   document.getElementById("main").innerHTML =  studentDetails.toString();    
+                }
+                function shift(){
+                   studentDetails.shift();
+                   document.getElementById("output").innerHTML =  studentDetails.toString();    
+                }
+                function unshift(){
+                   studentDetails.unshift("suresh");
+                   document.getElementById("shift").innerHTML =  studentDetails.toString();    
+                }
+                function join(){
+                   var st = studentDetails.join("-");
+                   document.getElementById("pop").innerHTML =  st;    
+                }
+                function splice(){
+                   var st = studentDetails.splice(1, 2);
+                   document.getElementById("splice").innerHTML =  st;    
+                }
+                function slice(){
+                   var st = studentDetails.slice(1, 4);
+                   document.getElementById("slice").innerHTML =  st;    
+                }
+                function length(){
+                   var st = studentDetails.length;
+                   document.getElementById("long").innerHTML =  st;    
+                }
+                function concat(){
+                const conArray = ["Ram"];
+                   var st = studentDetails.concat(conArray);
+                   document.getElementById("meter").innerHTML =  st;    
+                }
+            </script>
+            <div>
+                <h1>toString</h1>
+                <p id="string">Output</p>
+                <button onclick="arrayToString()">toString</button>
+           </div>
+           <div>
+            <h1>push</h1>
+            <p id="data">Output</p>
+            <button onclick="push()">push</button>
+       </div>
+       <div>
+        <h1>pop</h1>
+        <p id="main">Output</p>
+        <button onclick="pop()">pop</button>
+   </div>
+   <div>
+    <h1>shift</h1>
+    <p id="output">Output</p>
+    <button onclick="shift()">shift</button>
+</div>                       
+<div>
+    <h1>unshift</h1>
+    <p id="shift">unshift</p>
+    <button onclick="unshift()">unshift</button>
+</div>
+<div>
+    <h1>join</h1>
+    <p id="pop">join</p>
+    <button onclick="join()">join</button>
+</div>
+<div>
+    <h1>splice</h1>
+    <p id="splice">splice</p>
+    <button onclick="splice()">splice</button>
+</div>
+<div>
+    <h1>slice</h1>
+    <p id="slice">slice</p>
+    <button onclick="slice()">slice</button>
+</div>
+<div>
+    <h1>length</h1>
+    <p id="long">length</p>
+    <button onclick="length()">length</button>
+</div>
+<div>
+    <h1>concat</h1>
+    <p id="meter">concat</p>
+    <button onclick="concat()">concat</button>
+</div>
+        </body>
+    </head>
+</html>
