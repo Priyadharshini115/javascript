@@ -1,0 +1,22 @@
+<html>
+    <head></head>
+    <body>
+        <div id= "demo"></div>
+        <script>
+           const menu =["Home","About us"];
+        menu.filter (e=>main(e)).map(e=>data(e)).forEach(e=>details(e));
+           function details(e){
+        
+            document.getElementById("demo").innerHTML= document.getElementById("demo").innerHTML+"<li>"+(e)+"</li></br>";
+           }
+           function data(e){
+           return e+"Hello";
+           }
+           function main(e){
+            return e.startsWith("H");
+           }
+
+        </script>
+        
+    </body>
+</html>
