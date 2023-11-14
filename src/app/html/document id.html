@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scale Up</title>
+    </head>
+    <body onload="dataLoad()">
+        <script>
+            const courses = ["Java", "Javascript", "Python" , "PowerBI"];
+            var couresList = '';
+            var popedElement = [];
+            function dataLoad() {
+               createContent();
+            }
+            function createContent(){
+                couresList = '';
+                courses.forEach( e=> couresList = couresList + "<li>" + e + "</li>");
+                document.getElementById("demo").innerHTML = couresList;
+            }
+            </script>
+    
+    <div> Courses : </div>
+    <div id="demo">
+    </div>
+    
+    <button onclick="addCourse()">AddCourse</button>
+   <button onclick ="deleteCourse()">DeleteCourse</button>
+     
+    
+</body>
+</html>
