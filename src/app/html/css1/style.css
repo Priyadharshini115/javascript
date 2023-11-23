@@ -42,6 +42,15 @@
     margin-left: 52px;
 
 }
+label{
+    width:100px;
+    color: #f00;
+}
+.object-name{
+    margin-top: 15px;
+    margin-left: 59px;
+
+}
 .color-name{
     color:darkred;
 }
