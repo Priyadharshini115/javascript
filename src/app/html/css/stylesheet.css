@@ -1,0 +1,16 @@
+.card{
+    width:100%;
+    display:flex ;
+    flex-direction: column;
+}
+.ul{
+   width:100%;
+}
+.card h1{
+    width:100%;
+    display:flex ;
+}
+.card span{
+    width:100%;
+    display:flex ;
+}
