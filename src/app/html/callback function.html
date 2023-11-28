@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="demo"></div>
+        
+        <script>
+            function myFunction(sum){
+            document.getElementById("demo").innerHTML=sum;
+            }
+            function superFunction(a,b,myFunction){
+                let sum=a+b;
+            
+                myFunction(sum);
+            }
+            superFunction(10,5,myFunction);
+        </script>
+    </body>
+</html>
