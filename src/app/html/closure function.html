@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
 <body>
-<p id="demo"></p>
+
+<button type="button" onclick="myFunction()">Count!</button>
+
+<p id="demo">0</p>
 
 <script>
-myFunction();
+const add = (function () {
+  let counter = 0;
+  return function () {counter += 1; return counter;}
+})();
 
-function myFunction() {
-  let a = 4;
-  document.getElementById("demo").innerHTML = a * a;
-}
+
+  document.getElementById("demo").innerHTML = add();
+
 </script>
 
 </body>

@@ -7,10 +7,10 @@
             function myFunction(sum){
             document.getElementById("demo").innerHTML=sum;
             }
-            function superFunction(a,b,myFunction){
+            function superFunction(a,b,callback){
                 let sum=a+b;
             
-                myFunction(sum);
+                callback(sum);
             }
             superFunction(10,5,myFunction);
         </script>
