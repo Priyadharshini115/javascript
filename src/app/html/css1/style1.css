@@ -1,0 +1,62 @@
+.label-name{
+    font-size: 20px ; 
+    font-weight: bold;
+    margin-left: 12px;margin-top: 10px;
+    
+   }
+   .text-name{
+    color:"green";
+   }
+   .data-name{
+       font-size: 18px;
+       font-weight: lighter;
+       
+      
+   
+   }
+   .style-name{
+          
+       margin-top: 13px;
+       margin-left: 35px;
+   
+        
+   
+   }
+   .center-name{
+       
+       margin-top: 15px;
+       margin-left: 104px;
+   
+   }
+   .dense-name{
+       
+       margin-top: 15px;
+       margin-left: 17px;
+   
+       
+   }
+   .date-name{
+       margin-top: 15px;
+       margin-left: 51px;
+   
+   }
+   .pin-name{
+       
+       margin-top: 15px;
+       margin-left: 52px;
+   
+   }
+   label{
+       width:100px;
+       color: black;
+   }
+   .object-name{
+       margin-top: 15px;
+       margin-left: 11px;
+   
+   }
+   .color-name{
+       color:black;
+   }
+   
+   

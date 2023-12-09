@@ -1,5 +1,5 @@
-function data(){
- alert("data");
+function demo(){
+ alert('data');
  
 
 }
