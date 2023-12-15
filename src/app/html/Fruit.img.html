@@ -21,19 +21,20 @@
         </div>
          <script>
             var counter=0;
-             var counter=add+1;
             function incrementapple(){
-                    const img= document.getElementById("appleCounter").value;
+                counter++;
+                document.getElementById("appleCounter").innerHTML=counter;
             }
             function decrementapple(){
-                const img =document.getElementById("appleCounter").value;
+                counter--;
+                document.getElementById("appleCounter").innerHTML=counter;
 
             }
-             document.getElementsById("appleCounter").innerHTML=counter
+             
          </script>
 
-         <button onclick="apple()">+</button>
-         <button onclick="apple()">-</button>
+         <button onclick="incrementapple()">+</button>
+         <button onclick="decrementapple()">-</button>
          <label> counter :</label><div id="appleCounter"></div>
         
          
@@ -41,29 +42,39 @@
             <img src=".//img.fruit/Orange-img.jpg" width="200px";height=200px/>
          </div>
          <script>
-            function orange(){
-                const img=document.getElementById("demo").value; 
+            var ocounter=0;
+            function incrementorange(){
+                ocounter++;
+                document.getElementById("orangeCounter").innerHTML=ocounter;
                 
             }
-           
+            function decrementorange(){
+                ocounter--;
+                document.getElementById("orangeCounter").innerHTML=ocounter;
+            }
          </script>
-           <button onclick="orange()">+</button>
-           <button onclick="orange()">-</button>
-           <button onclick="orange()">count</button>
+           <button onclick="incrementorange()">+</button>
+           <button onclick="decrementorange()">-</button>
+          <label> counter :</label><div id="orangeCounter"></div>
            
          <div>
             <img src=".//img.fruit/Strawberry-img.jpg" width="200px";height=200px/>
          </div>
          <script>
-            function strawberry(){
-                const img=document.getElementById("demo").value;
+            var stcounter=0;
+            function incrementstrawberry(){
+                stcounter++;
+                document.getElementById("strawberryCounter").innerHTML=stcounter;
             }
-            
+            function decrementstrawberry(){
+                stcounter--;
+                document.getElementById("strawberryCounter").innerHTML=stcounter;
+            }
          </script>
              
-             <button onclick="strawberry()">+</button>
-             <button onclick="strawberry()">-</button>
-             <button onclick="strawberry()">count</button>
+             <button onclick="incrementstrawberry()">+</button>
+             <button onclick="decrementstrawberry()">-</button>
+             <label> counter :</label><div id="strawberryCounter"></div>
             
         <div id ="demo"></div>
         
