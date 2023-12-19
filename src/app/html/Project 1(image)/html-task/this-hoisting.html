@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript</h1>
+<p>this- declaration are not hoisted</p>
+
+<p id="demo"></p>
+
+<script>
+
+class Car {
+  constructor(brand) {
+    this.carname = brand;
+  }
+}
+
+
+const myCar = new Car("Ford");
+document.getElementById("demo").innerHTML = myCar.carname;
+
+</script>
+
+</body>
+</html>

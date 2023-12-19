@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript</h1>
+<p>use undescore to separate get/set</p>
+
+<p id="demo"></p>
+
+<script>
+class Car {
+  constructor(brand) {
+    this._carname = brand;
+  }
+  get carname() {
+    return this._carname;
+  }
+  set carname(x) {
+    this._carname = x;
+  }
+}
+
+const myCar = new Car("Ford");
+
+document.getElementById("demo").innerHTML = myCar.carname;
+</script>
+
+</body>
+</html>
